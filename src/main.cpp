@@ -119,7 +119,7 @@ void setup() {
   
   writeRegister(FF_MT_COUNT, 0x0A);
 
-  Serial.printf("FF_MT_THS: 0x%04x\n", readRegister(FF_MT_COUNT));
+  Serial.printf("FF_MT_COUNT: 0x%04x\n", readRegister(FF_MT_COUNT));
 
   //Enable motion detection Interrupt function in CRTL_REG4
   Serial.printf("CTRL_REG4 initial: 0x%04x\n", readRegister(CTRL_REG4));
